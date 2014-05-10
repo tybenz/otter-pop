@@ -1,0 +1,7 @@
+pygments: true
+permalink: /:year/:month/:day/:title
+markdown: rdiscount
+exclude: ['.git']
+name: "Otter Pop"
+description: "The worl's greated Jekyll theme"
+url: http://tybenz.com/otter-pop
