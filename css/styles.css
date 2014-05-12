@@ -164,23 +164,23 @@ video {
 }
 
 .icon.doc {
-  background-image:url(/img/doc.png);
+  background-image:url(/otter-pop/img/doc.png);
 }
 
 .icon.info {
-  background-image:url(/img/info.png);
+  background-image:url(/otter-pop/img/info.png);
 }
 
 .icon.code {
-  background-image:url(/img/code.png);
+  background-image:url(/otter-pop/img/code.png);
 }
 
 .icon.twitter {
-  background-image:url(/img/twitter.png);
+  background-image:url(/otter-pop/img/twitter.png);
 }
 
 .icon.github {
-  background-image:url(/img/github.png);
+  background-image:url(/otter-pop/img/github.png);
 }
 
 .nav a {
