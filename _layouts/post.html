@@ -1,13 +1,3 @@
-<!--
--
--   made by Tyler Benziger
--   @tybenz
--   github.com/tybenz
--   tybenz.com
--
--   site repo found here: http://github.com/tybenz/spamthe.net
--
--->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,32 +14,20 @@
     <link href="/css/styles.css" rel="stylesheet" type="text/css">
     <link href="/css/pygments.css" rel="stylesheet" type="text/css">
     <link href="/img/icon.jpg" rel="shortcut icon">
-    <script type="text/javascript">
-      if ( window.location.host == "tybenz.com" ) {
-        window.location = "http://spamthe.net"
-      }
-    </script>
 </head>
 <body>
   <div class="sidebar">
-    <div class="logo">
-      <img src="/img/logo.jpg" class="spam">
-    </div>
+    <a href="/" class="logo">
+      <img src="/img/logo.jpg">
+    </a>
 
-    <ul class="social-links">
-      <div class="social-links-inner">
-        <li><a target="_blank" class="social social-twitter behance" href="#"></a></li>
-        <li><a target="_blank" class="social social-twitter dribbble" href="#"></a></li>
-        <li><a target="_blank" class="social social-twitter facebook" href="#"></a></li>
-        <li><a target="_blank" class="social social-twitter google" href="#"></a></li>
-        <li><a target="_blank" class="social social-twitter like" href="#"></a></li>
-        <li><a target="_blank" class="social social-twitter linkedin" href="#"></a></li>
-        <li><a target="_blank" class="social social-twitter pinterest" href="#"></a></li>
-        <li><a target="_blank" class="social rss" href="feed.xml"></a></li>
-        <li><a target="_blank" class="social social-twitter stumbleupon" href="#"></a></li>
-        <li><a target="_blank" class="social social-twitter twitter" href="#"></a></li>
-        <li><a target="_blank" class="social social-twitter vimeo" href="#"></a></li>
-        <li><a target="_blank" class="social social-twitter youtube" href="#"></a></li>
+    <ul class="nav">
+      <div class="nav-inner">
+        <li><a href="http://tybenz.com"><span class="icon doc"></span>blog</a></li>
+        <li><a href="http://tybenz.com/about"><span class="icon info"></span>about</a></li>
+        <li><a href="http://tybenz.com/projects"><span class="icon code"></span>projects</a></li>
+        <li><a href="http://github.com/tybenz"><span class="icon github"></span>github</a></li>
+        <li><a href="http://twitter.com/tybenz"><span class="icon twitter"></span>twitter</a></li>
       </div>
     </ul>
   </div>
@@ -57,20 +35,10 @@
     <!--<h1><marquee scrolldelay="60">otter pop - the world's greatest jekyll theme</marquee></h1>-->
     <h1>{{ page.title }}</h1>
 
-    {{ content }}
+    <div class="post-body">
+      {{ content }}
+    </div>
   </div>
-  <script type="text/javascript">
-    var links = document.getElementsByClassName( 'social-twitter' );
-
-    for ( var i = 0, len = links.length; i < len; i++ ) {
-      link = links[i];
-      link.addEventListener( 'click', function ( evt ) {
-        evt.preventDefault();
-
-        window.location = 'http://twitter.com/tybenz';
-      });
-    }
-  </script>
   <script type="text/javascript">
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),

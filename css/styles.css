@@ -4,11 +4,13 @@ html {
 }
 
 .sidebar {
+  padding-top: 20px;
   position: fixed;
 }
 
 .logo {
-  width: 336px;
+  display: block;
+  max-width: 336px;
 }
 
 .logo img {
@@ -16,9 +18,9 @@ html {
   height: 100%;
 }
 
-.social-links {
-  margin: 20px 0 0;
-  padding: 0 0 0 58px;
+.nav {
+  margin: 40px 0 0;
+  padding: 0 0 0 48px;
   overflow: hidden;
   list-style: none;
 }
@@ -31,7 +33,8 @@ html {
 
 .wrapper h1 {
   margin-top: 0;
-  padding: 50px 20px 20px 0;
+  padding: 50px 0 20px 0;
+  text-transform: lowercase;
 }
 
 body {
@@ -43,7 +46,8 @@ a {
   color: inherit;
 }
 
-.post {
+.post-link {
+  text-transform: lowercase;
   display: block;
   max-width: 400px;
   padding: 20px 30px;
@@ -51,132 +55,70 @@ a {
   border: 2px dotted red;
 }
 
-.post:hover {
+.post-link:hover {
   background: red;
   color: white;
   border: 2px dotted white;
 }
 
-.post:nth-child(4n+1) {
+.post-link:nth-child(4n+1) {
   border-color: aqua;
   border-style: outset;
 }
 
-.post:nth-child(4n+1):hover {
+.post-link:nth-child(4n+1):hover {
   background: aqua;
   color: inherit;
   border: 2px outset white;
 }
 
-.post:nth-child(4n+2) {
+.post-link:nth-child(4n+2) {
   border-color: magenta;
   border-style: solid;
   border-width: 1px;
   box-shadow: 0 0 0 1px white, 0 0 0 2px magenta;
 }
 
-.post:nth-child(4n+2):hover {
+.post-link:nth-child(4n+2):hover {
   background: magenta;
   color: white;
 }
 
-.post:nth-child(4n+3) {
+.post-link:nth-child(4n+3) {
   border-color: yellow;
   border-style: groove;
 }
 
-.post:nth-child(4n+3):hover {
+.post-link:nth-child(4n+3):hover {
   background: yellow;
   color: inherit;
 }
 
-.social {
-  margin-right: 32px;
-  margin-bottom: 32px;
+.post-body {
+  line-height: 1.3em;
+  max-width: 700px;
+}
+
+.post-body img {
+  max-width: 100%;
   display: block;
-  float: left;
-  width: 32px;
-  height: 32px;
+  margin-bottom: 10px;
 }
 
-.social.behance {
-  background-image: url(../img/social/behance.png);
+.post-body a:nth-of-type(4n) {
+  color: red;
 }
 
-.social.dribbble {
-  background-image: url(../img/social/dribbble.png);
+.post-body a:nth-of-type(4n+1) {
+  color: magenta;
 }
 
-.social.facebook {
-  background-image: url(../img/social/facebook.png);
-}
-
-.social.google {
-  background-image: url(../img/social/google.png);
-}
-
-.social.like {
-  background-image: url(../img/social/like.png);
-}
-
-.social.linkedin {
-  background-image: url(../img/social/linkedin.png);
-}
-
-.social.pinterest {
-  background-image: url(../img/social/pinterest.png);
-}
-
-.social.rss {
-  background-image: url(../img/social/rss.png);
-}
-
-.social.stumbleupon {
-  background-image: url(../img/social/stumbleupon.png);
-}
-
-.social.twitter {
-  background-image: url(../img/social/twitter.png);
-}
-
-.social.vimeo {
-  background-image: url(../img/social/vimeo.png);
-}
-
-.social.youtube {
-  background-image: url(../img/social/youtube.png);
-}
-
-#newsletter-signup form {
-  padding: 0;
-  width: 223px;
-  margin: 0 auto 4rem;
-  font-size: 14px;
-}
-
-#newsletter-signup .title {
-  margin-bottom: 0.5em;
-}
-
-#newsletter-signup input {
-  font-family: monospace;
-  font-size: inherit;
-  outline: none;
-}
-
-#newsletter-signup input[type=email] {
-  width: 96%;
-  padding: 2%;
+.post-body a:nth-of-type(4n+2) {
   color: blue;
-  border: 1px solid black;
 }
 
-#newsletter-signup input[type=submit] {
-  margin: 0.5em 0 0;
-  padding: 0.5em;
-  border: none;
-  background: magenta;
-  color: white;
+.post-body a:nth-of-type(4n+3) {
+  color: green;
 }
 
 blockquote {
@@ -186,6 +128,75 @@ blockquote {
   margin: 2em 0;
   padding: 0 1em;
   border-left: 4px dashed blue;
+}
+
+video {
+  width: 100%;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container.skinny {
+  padding-bottom: 43.076923%;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  background-size: 100% 100%;
+}
+
+.icon.doc {
+  background-image:url(/img/doc.png);
+}
+
+.icon.info {
+  background-image:url(/img/info.png);
+}
+
+.icon.code {
+  background-image:url(/img/code.png);
+}
+
+.icon.twitter {
+  background-image:url(/img/twitter.png);
+}
+
+.icon.github {
+  background-image:url(/img/github.png);
+}
+
+.nav a {
+  margin-right: 32px;
+  margin-bottom: 32px;
+  display: block;
+  float: left;
+  height: 32px;
+}
+
+.nav a {
+  text-decoration: none;
+}
+
+.nav a:hover {
+  text-decoration: underline;
 }
 
 @media screen and (max-width: 57.25rem) {
@@ -207,7 +218,7 @@ blockquote {
     text-align: center;
   }
 
-  .social-links {
+  .nav {
     position: absolute;
     top: 0;
     left: 0;
@@ -219,28 +230,32 @@ blockquote {
     height: 3rem;
   }
 
-  .social-links-inner {
-    width: 48rem;
-    overflow: hidden;
+  .nav {
+    padding-top: 0.3em;
+    height: 4rem;
+    text-align: center;
   }
 
-  .irc {
-    display: none;
+  .nav .social {
+    float: none;
+    margin-bottom: 10px;
+    margin-right: 10px;
   }
 
-  .spam {
+  .nav li {
+    display: inline-block;
+    font-size: 0.7em;
+  }
+
+  .logo img {
     display: block;
     max-width: 100%;
     margin: 4rem auto 0;
   }
-
-  #newsletter-signup {
-    display: none;
-  }
 }
 
 @media screen and (max-width: 33.125rem) {
-  .spam {
+  .logo img {
     max-width: 60%;
   }
 }
