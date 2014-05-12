@@ -236,7 +236,7 @@ video {
     text-align: center;
   }
 
-  .nav .social {
+  .nav a {
     float: none;
     margin-bottom: 10px;
     margin-right: 10px;
