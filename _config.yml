@@ -1,5 +1,5 @@
 pygments: true
-permalink: /:year/:month/:day/:title
+permalink: /otter-pop/:year/:month/:day/:title
 markdown: rdiscount
 exclude: ['.git']
 name: "Otter Pop"
