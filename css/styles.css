@@ -175,6 +175,10 @@ video {
   background-image:url(/otter-pop/img/code.png);
 }
 
+.icon.link {
+  background-image:url(/otter-pop/img/link.png);
+}
+
 .icon.twitter {
   background-image:url(/otter-pop/img/twitter.png);
 }
