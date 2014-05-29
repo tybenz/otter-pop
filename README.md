@@ -2,6 +2,6 @@
 
 The world's greatest Jekyll theme.
 
-Example:
+Example: <http://tybenz.com>
 
 ![](http://jekyllthemes.org/thumbnails/otter-pop.png)
